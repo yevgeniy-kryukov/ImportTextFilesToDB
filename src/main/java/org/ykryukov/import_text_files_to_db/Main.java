@@ -1,6 +1,8 @@
 package org.ykryukov.import_text_files_to_db;
 
 import java.util.ArrayList;
+import java.util.Date;
+import java.text.SimpleDateFormat;
 
 class Main {
   
@@ -32,7 +34,7 @@ class Main {
       }
     }
     
-    System.out.println("Finished at " + new java.util.Date());
+    System.out.println("Finished at " + new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS").format(new Date()));
     
   }
   
